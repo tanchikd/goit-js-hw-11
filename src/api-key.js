@@ -1,0 +1,3 @@
+const BASE_KEY = '40011339-921eb4f1ce164150626b66d0c';
+
+export { BASE_KEY };

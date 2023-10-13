@@ -1,0 +1,161 @@
+@charset "UTF-8";
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+}
+
+p {
+  margin: 0;
+}
+
+.search-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #4d5ae5;
+}
+
+.search-form input {
+  width: 20%;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  outline: none;
+  padding: 8px 10px;
+}
+
+.search-form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #fff;
+  border-radius: 0 5px 5px 0;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: rgba(224, 224, 224, 0.5);
+  transition: all 0.3s;
+}
+
+.load-more.is-hidden {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.gallery,
+.info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery__link {
+  margin-top: 20px;
+  margin-left: 20px;
+  min-width: 320px;
+  flex-basis: calc((100% - 80px) / 4);
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.gallery__link:hover,
+.gallery__link:focus {
+  transform: scale(1.05);
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.gallery-item__img {
+  display: block;
+  height: 30vh;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.info {
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.info-item:not(:first-child) {
+  margin-left: 5px;
+}
+
+#arrowTop {
+  font-size: 2.5em;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#arrowTop::before {
+  content: '🔝';
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 5px;
+  justify-content: space-between;
+}
+
+.photo-card {
+  width: calc((100% - 15px) / 4);
+  background-color: white;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
