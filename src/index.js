@@ -73,9 +73,7 @@ function onSearchForm(e) {
   fetchImages(query, page, perPage)
     .then(data => {
       if (data.totalHits === 0) {
-        Notiflix.Notify.failure(
-          'Sorry, there are no images matching your search query. Please try again.'
-        );
+        Notiflix.Notify.failure('Please try again.');
       } else {
         renderGallery(data.hits);
         simpleLightBox = new SimpleLightbox('.gallery a').refresh();
